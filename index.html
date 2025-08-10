@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI Expense Splitter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>💡 AI Expense Splitter</h1>
+    <p>Smart, optimized settlements — AI summary supported</p>
+  </header>
+
+  <main>
+    <section class="input">
+      <input id="payer" placeholder="Payer name (who paid)" />
+      <input id="amount" type="number" placeholder="Amount" />
+      <input id="participants" placeholder="Participants (comma separated) — optional" />
+      <button id="addBtn">Add Expense</button>
+      <button id="clearBtn" class="ghost">Clear</button>
+    </section>
+
+    <section class="expenses">
+      <h2>Expenses</h2>
+      <ul id="expenseList"></ul>
+    </section>
+
+    <section class="controls">
+      <button id="calcBtn">Calculate & Optimize</button>
+      <button id="aiBtn">Ask AI for Summary</button>
+      <button id="copyBtn">Copy Settlement</button>
+      <button id="csvBtn">Export CSV</button>
+    </section>
+
+    <section class="results">
+      <h2>Settlements</h2>
+      <div id="settlementOutput" class="box"></div>
+      <h2>AI Summary</h2>
+      <div id="aiSummary" class="box muted">Press "Ask AI for Summary" to get a natural language summary.</div>
+    </section>
+  </main>
+
+  <footer>
+    <small>Hackathon-ready · Mobile friendly</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
